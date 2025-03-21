@@ -1,0 +1,23 @@
+:root {
+    --main-color: #3F0777;
+    --black: hsl(0, 0%, 17%);
+    --white: hsl(0, 0%, 100%);
+    --radius: 1.66rem;
+    --line-height: 1.75;
+    --line-height-header: 1.5;
+    --line-height-paragraaf: 1.25;
+    --one-rem: 18px; //base font size 
+    quotes: '\201c' '\201d';
+}
+
+//Font weight
+$regular: 400 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+
+//Function calculating px-rem unit
+$base-font-size: 18;
+
+@function rem($pixels, $context: $base-font-size) {
+    @return #{$pixels/$context}rem;
+}

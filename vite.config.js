@@ -7,4 +7,18 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData:
+            `
+            @use "@/assets/Styles/01-base/variables" as *;
+            @use "@/assets/Styles/01-base/mixins" as *;
+        `
+      }
+    }
+  },
+  build: {
+    cssCodeSplit: false
+  },
 })

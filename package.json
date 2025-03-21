@@ -1,7 +1,7 @@
 {
   "name": "vite-vue-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@vueuse/core": "^13.0.0",
+    "assets": "^3.0.1",
     "pinia": "^3.0.1",
+    "sass": "^1.86.0",
     "vite-plugin-vue-devtools": "^7.7.2",
+    "vite-svg-loader": "^5.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
